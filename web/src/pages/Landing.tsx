@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import { FiArrowRightCircle } from 'react-icons/fi';
+import { FiArrowRight } from 'react-icons/fi';
 
 import '../styles/pages/landing.css';
 import logoImg from '../images/logo.svg';
+
 export default class Landing extends Component {
     render() {
         return (
@@ -21,9 +23,9 @@ export default class Landing extends Component {
                         <span>Mato Grosso</span>
                     </div>
 
-                    <a href="" className="enter-app">
-                        <FiArrowRightCircle size={26} color="rgba(0,0,0, 0.6)" />
-                    </a>
+                    <Link to="/app" className="enter-app">
+                        <FiArrowRight size={26} color="rgba(0,0,0, 0.6)" />
+                    </Link>
                 </div>
             </div>
         )

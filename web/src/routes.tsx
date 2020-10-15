@@ -5,18 +5,16 @@ import OrphanagesMap from './pages/OrphanagesMap';
 import Orphanage from './pages/Orphanage';
 import CreateOrphanage from './pages/CreateOrphanage';
 
-function Routes() {
+export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
                 <Route path="/" component={Landing} exact></Route>
                 <Route path="/app" component={OrphanagesMap}></Route>
                 
-                <Route path="/orphanage/create" component={CreateOrphanage} exact></Route>
+                <Route path="/orphanage/create" component={CreateOrphanage}></Route>
                 <Route path="/orphanage/:id" component={Orphanage}></Route>
             </Switch>
         </BrowserRouter>
     );
 }
-
-export default Routes;
